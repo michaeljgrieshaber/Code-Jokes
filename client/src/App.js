@@ -3,12 +3,12 @@ import './App.css';
 const base = process.env.REACT_APP_AIRTABLE_BASE
 const key = process.env.REACT_APP_AIRTABLE_KEY
 
-console.log(base)
-console.log(key)
+
 
 function App() {
   return (
     <div className="App">
+      <h1>Hello!</h1>
     </div>
   );
 }
