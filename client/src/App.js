@@ -1,7 +1,6 @@
 import './App.css';
 
-const base = process.env.REACT_APP_AIRTABLE_BASE
-const key = process.env.REACT_APP_AIRTABLE_KEY
+
 
 
 
