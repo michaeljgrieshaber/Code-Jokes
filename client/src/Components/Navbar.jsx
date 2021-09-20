@@ -5,7 +5,9 @@ export default function Navbar() {
     <div>
       <header>
         <Link to="/">Home</Link>
+        <br />
         <Link to="/Create">Create</Link>
+        <br />
         <Link to="/Rules">Rules</Link>
       </header>
     </div>
