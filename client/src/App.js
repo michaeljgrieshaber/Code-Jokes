@@ -1,5 +1,8 @@
 import './App.css';
-
+import {Route} from 'react-router-dom'
+import Home from './Components/Home'
+import Rules from './Components/Rules'
+import Create from './Components/Create';
 
 
 
@@ -7,7 +10,21 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Hello!</h1>
+      <Route exact path="/">
+        <Home />
+      </Route>
+
+      <Route exact path="/Create">
+        <Create />
+      </Route>
+  
+      <Route exact path="/Rules">
+        <Rules />
+      </Route>
+
+
+
+
     </div>
   );
 }
