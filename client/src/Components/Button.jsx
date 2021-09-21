@@ -7,10 +7,9 @@ export default function Button(props) {
         </button>
       </div>
       <div className="buttonMinus">
-        <button>-</button>
-        {/* <button onClick={props.handleSubmitMinus(props.id, props.votes)}>
+        <button onClick={() => props.handleSubmitMinus(props.id, props.votes)}>
           -
-        </button> */}
+        </button>
       </div>
     </div>
   );

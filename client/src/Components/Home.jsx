@@ -40,24 +40,42 @@ export default function Home() {
     setToggle((toggle) => !toggle);
   };
 
+  const handleSubmitMinus = async (id, votes) => {
+    const records = [
+      {
+        id,
+        fields: {
+          votes: votes - 1,
+        },
+      },
+    ];
+
+    await axios.patch(URL, { records }, config);
+    setToggle((toggle) => !toggle);
+  };
+
   return (
     <div className="home">
       <Navbar />
-      Home
+      Jokes
       <div>
         {jokes.map((joke, id) => {
           return (
             <div className="jokes" key={id}>
-              <h3>{joke.fields.joke}</h3>
-              <h3>-{joke.fields.author}</h3>
-              <h3>Votes: {joke.fields.votes}</h3>
+              <div className="jokesAndAuthor">
+                <h3>{joke.fields.joke}</h3>
+                <h3>-{joke.fields.author}</h3>
+              </div>
+              <div className="votesAndButtons">
+                <h3>Votes: {joke.fields.votes}</h3>
 
-              <Button
-                votes={joke.fields.votes}
-                id={joke.id}
-                handleSubmitPlus={handleSubmitPlus}
-                // handleSubmitMinus={handleSubmitMinus}
-              />
+                <Button
+                  votes={joke.fields.votes}
+                  id={joke.id}
+                  handleSubmitPlus={handleSubmitPlus}
+                  handleSubmitMinus={handleSubmitMinus}
+                />
+              </div>
             </div>
           );
         })}
