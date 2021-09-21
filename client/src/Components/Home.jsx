@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Navbar from "./Navbar";
+import Button from "./Button";
 
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
 const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
@@ -29,12 +30,13 @@ export default function Home() {
       <Navbar />
       Home
       <div>
-        {jokes.map((joke) => {
+        {jokes.map((joke, id) => {
           return (
-            <div>
+            <div className="jokes" key={id}>
               <h3>{joke.fields.joke}</h3>
               <h3>-{joke.fields.author}</h3>
               <h3>Votes: {joke.fields.votes}</h3>
+              <Button />
             </div>
           );
         })}

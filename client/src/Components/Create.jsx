@@ -17,13 +17,14 @@ const config = {
 export default function Create() {
   const [joke, setJoke] = useState("");
   const [author, setAuthor] = useState("");
-  const [votes, setVotes] = useState(0);
+  const [votes] = useState(0);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const fields = {
       joke,
       author,
+      votes,
     };
 
     await axios.post(URL, { fields }, config);
@@ -39,8 +40,6 @@ export default function Create() {
         author={author}
         setAuthor={setAuthor}
         handleSubmit={handleSubmit}
-        votes={votes}
-        setVotes={setVotes}
         type={"Submit"}
       />
     </div>

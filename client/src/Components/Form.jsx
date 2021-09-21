@@ -13,13 +13,7 @@ export default function Form(props) {
       <input
         type="text"
         value={props.author}
-        onChange={(e) => -props.setAuthor(e.target.value)}
-      />
-      <br />
-      <input
-        type="number"
-        value={props.votes}
-        // onChange={(e) => -props.setAuthor(e.target.value)}
+        onChange={(e) => props.setAuthor(e.target.value)}
       />
       <br />
 
