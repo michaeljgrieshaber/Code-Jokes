@@ -16,18 +16,32 @@ const config = {
 
 export default function Home() {
   const [jokes, setJokes] = useState([]);
+  const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
     async function getJokes() {
       const res = await axios.get(URL, config);
       setJokes(res.data.records);
-      // console.log(res.data.records);
     }
     getJokes();
-  }, []);
+  }, [toggle]);
+
+  const handleSubmitPlus = async (id, votes) => {
+    const records = [
+      {
+        id,
+        fields: {
+          votes: votes + 1,
+        },
+      },
+    ];
+
+    await axios.patch(URL, { records }, config);
+    setToggle((toggle) => !toggle);
+  };
 
   return (
-    <div>
+    <div className="home">
       <Navbar />
       Home
       <div>
@@ -38,7 +52,12 @@ export default function Home() {
               <h3>-{joke.fields.author}</h3>
               <h3>Votes: {joke.fields.votes}</h3>
 
-              <Button votes={joke.fields.votes} id={joke.id} />
+              <Button
+                votes={joke.fields.votes}
+                id={joke.id}
+                handleSubmitPlus={handleSubmitPlus}
+                // handleSubmitMinus={handleSubmitMinus}
+              />
             </div>
           );
         })}
