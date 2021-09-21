@@ -21,6 +21,7 @@ export default function Home() {
     async function getJokes() {
       const res = await axios.get(URL, config);
       setJokes(res.data.records);
+      // console.log(res.data.records);
     }
     getJokes();
   }, []);
@@ -36,7 +37,8 @@ export default function Home() {
               <h3>{joke.fields.joke}</h3>
               <h3>-{joke.fields.author}</h3>
               <h3>Votes: {joke.fields.votes}</h3>
-              <Button />
+
+              <Button votes={joke.fields.votes} id={joke.id} />
             </div>
           );
         })}

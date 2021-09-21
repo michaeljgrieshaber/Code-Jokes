@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
 const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
@@ -14,22 +14,31 @@ const config = {
 
 export default function Button(props) {
   const [vote, setVote] = useState(props.votes);
+  console.log(props.id);
+  console.log(props.votes);
+  let prevState = props.votes;
 
   const handleSubmit = async () => {
-    setVote(() => {
-      vote += 1;
-    });
-    const fields = {
-      // votes,
-    };
+    setVote((prevState += 1));
 
-    await axios.patch(URL, { fields }, config);
+    const records = [
+      {
+        id: props.id,
+        fields: {
+          votes: vote,
+        },
+      },
+    ];
+    await axios.patch(URL, { records }, config);
   };
 
   return (
     <div>
+      {/* <button>+</button> */}
+      {/* <button>-</button> */}
+
       <button onClick={handleSubmit}>+</button>
-      <button onClick={handleSubmit}>-</button>
+      {/* <button onClick={handleSubmit}>-</button> */}
     </div>
   );
 }
