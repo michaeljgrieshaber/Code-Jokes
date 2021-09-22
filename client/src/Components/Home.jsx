@@ -21,7 +21,17 @@ export default function Home() {
   useEffect(() => {
     async function getJokes() {
       const res = await axios.get(URL, config);
-      setJokes(res.data.records);
+      let jokesArray = res.data.records;
+
+      jokesArray.sort((a, b) => {
+        if (a.fields.votes > b.fields.votes) {
+          return -1;
+        } else {
+          return 1;
+        }
+      });
+      // console.log(array);
+      setJokes(jokesArray);
     }
     getJokes();
   }, [toggle]);
