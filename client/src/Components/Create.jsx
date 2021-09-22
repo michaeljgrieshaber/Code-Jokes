@@ -3,6 +3,8 @@ import axios from "axios";
 import { useState } from "react";
 import Form from "./Form";
 
+import { useHistory } from "react-router-dom";
+
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
 const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
 
@@ -19,6 +21,11 @@ export default function Create() {
   const [author, setAuthor] = useState("");
   const [votes] = useState(0);
 
+  const history = useHistory();
+  function handleHistory() {
+    history.push("/");
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const fields = {
@@ -28,20 +35,24 @@ export default function Create() {
     };
 
     await axios.post(URL, { fields }, config);
+    handleHistory();
   };
 
   return (
-    <div>
+    <div className="createPage">
       <Navbar />
-      Create
-      <Form
-        joke={joke}
-        setJoke={setJoke}
-        author={author}
-        setAuthor={setAuthor}
-        handleSubmit={handleSubmit}
-        type={"Submit"}
-      />
+      <div className="create">
+        Submit your own joke below!
+        <Form
+          joke={joke}
+          setJoke={setJoke}
+          author={author}
+          setAuthor={setAuthor}
+          handleSubmit={handleSubmit}
+          // handleHistory={handleHistory}
+          type={"Submit"}
+        />
+      </div>
     </div>
   );
 }

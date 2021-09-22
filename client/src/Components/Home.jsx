@@ -30,7 +30,6 @@ export default function Home() {
           return 1;
         }
       });
-      // console.log(array);
       setJokes(jokesArray);
     }
     getJokes();
@@ -67,7 +66,6 @@ export default function Home() {
   return (
     <div className="home">
       <Navbar />
-      Jokes
       <div>
         {jokes.map((joke, id) => {
           return (

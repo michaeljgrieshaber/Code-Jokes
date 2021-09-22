@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 
 export default function Rules() {
   return (
-    <div>
+    <div className="rules">
       <Navbar />
       These are the rules:
       <br />
