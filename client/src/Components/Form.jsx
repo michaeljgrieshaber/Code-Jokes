@@ -2,7 +2,8 @@ export default function Form(props) {
   return (
     <form onSubmit={props.handleSubmit} className="form">
       <label>Joke:</label>
-      <input
+      <textarea
+        className="jokeInput"
         type="text"
         value={props.joke}
         onChange={(e) => props.setJoke(e.target.value)}
@@ -11,6 +12,7 @@ export default function Form(props) {
 
       <label>Author:</label>
       <input
+        className="authorInput"
         type="text"
         value={props.author}
         onChange={(e) => props.setAuthor(e.target.value)}

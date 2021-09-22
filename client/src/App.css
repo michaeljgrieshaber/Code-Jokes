@@ -5,24 +5,23 @@ body {
 
 .navbar {
   display: grid;
-  grid-template-columns: 75% 25%;
+  grid-template-columns: 65% 35%;
   grid-template-rows: 1fr 1fr 1fr;
   max-height: 100px;
   border-style: solid;
   border-radius: 38.5;
-
   background-color: rgb(47, 255, 158);
 }
 
 .navTitle {
-  font-size: 40px;
+  font-size: 25px;
   grid-row-start: 2;
 }
 
 .navLinks {
   grid-column-start: 2;
   grid-row-start: 2;
-  font-size: 20px;
+  font-size: 15px;
   background-color: rgb(215, 174, 40);
 }
 
@@ -36,6 +35,7 @@ body {
   margin: 5px;
   background-color: rgb(182, 129, 182);
   display: grid;
+  /* grid-template-rows: 90% 10%; */
 }
 
 .createPage {
@@ -49,6 +49,14 @@ body {
 .form {
   background-color: rgb(182, 129, 182);
 }
+
+/* .jokeInput {
+  height: 400px;
+}
+
+.jokeInput {
+  height: 400px;
+} */
 
 .button {
   border-radius: 38.5%;
@@ -67,6 +75,28 @@ body {
 }
 
 @media only screen and (min-width: 600px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-height: 100px;
+    border-style: solid;
+    border-radius: 38.5;
+    background-color: rgb(47, 255, 158);
+  }
+
+  .navTitle {
+    font-size: 40px;
+    grid-row-start: 2;
+  }
+
+  .navLinks {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-size: 20px;
+    background-color: rgb(215, 174, 40);
+  }
+
   .jokes {
     border-style: solid;
     border-radius: 38.5;
@@ -74,7 +104,7 @@ body {
     background-color: rgb(182, 129, 182);
     display: grid;
     grid-template-columns: 75% 25%;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
   }
   .jokesAndAuthor {
     grid-column-start: 1;
