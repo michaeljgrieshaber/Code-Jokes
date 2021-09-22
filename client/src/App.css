@@ -57,13 +57,16 @@
   background-color: rgb(47, 255, 158);
 } */
 
-.buttons {
+.button {
+  border-radius: 90%;
 }
 
 .buttonPlus {
+  color: green;
 }
 
 .buttonMinus {
+  color: red;
 }
 
 /* .App-header {

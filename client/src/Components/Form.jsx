@@ -17,7 +17,7 @@ export default function Form(props) {
       />
       <br />
 
-      <button>{props.type}</button>
+      <button className="button">{props.type}</button>
     </form>
   );
 }
