@@ -35,6 +35,7 @@ export default function Create() {
     };
 
     await axios.post(URL, { fields }, config);
+    alert("you made a funny!");
     handleHistory();
   };
 
