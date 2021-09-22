@@ -50,7 +50,6 @@ export default function Create() {
           author={author}
           setAuthor={setAuthor}
           handleSubmit={handleSubmit}
-          // handleHistory={handleHistory}
           type={"Submit"}
         />
       </div>
