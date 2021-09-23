@@ -9,11 +9,9 @@ export default function Navbar() {
         <Link to="/" className="linkHome">
           Home
         </Link>
-        <br />
         <Link to="/Create" className="linkCreate">
           Add jokes
         </Link>
-        <br />
         <Link to="/Rules" className="linkRules">
           Rules
         </Link>
