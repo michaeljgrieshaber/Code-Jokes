@@ -6,11 +6,17 @@ export default function Navbar() {
       <div className="navTitle">Vote-a-Joke</div>
       <br />
       <div className="navLinks">
-        <Link to="/">Jokes Home</Link>
+        <Link to="/" className="linkHome">
+          Home
+        </Link>
         <br />
-        <Link to="/Create">Add your jokes</Link>
+        <Link to="/Create" className="linkCreate">
+          Add jokes
+        </Link>
         <br />
-        <Link to="/Rules">Rules</Link>
+        <Link to="/Rules" className="linkRules">
+          Rules
+        </Link>
       </div>
     </div>
   );
