@@ -70,7 +70,7 @@ export default function Home() {
         {jokes.map((joke, id) => {
           return (
             <div
-              className={joke.fields.votes > 0 ? "jokes" : "badJoke"}
+              className={joke.fields.votes > -1 ? "jokes" : "badJoke"}
               key={id}
             >
               <div className="jokesAndAuthor">
