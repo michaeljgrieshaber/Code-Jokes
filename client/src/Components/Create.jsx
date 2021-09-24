@@ -2,7 +2,6 @@ import Navbar from "./Navbar";
 import axios from "axios";
 import { useState } from "react";
 import Form from "./Form";
-
 import { useHistory } from "react-router-dom";
 
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;

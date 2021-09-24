@@ -38,6 +38,7 @@ body {
   text-transform: uppercase;
   padding: 2px;
   border-style: solid;
+  border-radius: 25px;
   font-size: 8px;
 }
 
@@ -49,6 +50,8 @@ body {
   text-transform: uppercase;
   padding: 2px;
   border-style: solid;
+  border-radius: 25px;
+
   font-size: 8px;
 }
 
@@ -60,6 +63,8 @@ body {
   text-transform: uppercase;
   padding: 2px;
   border-style: solid;
+  border-radius: 25px;
+
   font-size: 8px;
 }
 
@@ -69,11 +74,10 @@ body {
 
 .jokes {
   border-style: solid;
-  border-radius: 38.5;
+  border-radius: 25px;
   margin: 5px;
   background-color: rgb(182, 129, 182);
   display: grid;
-  /* grid-template-rows: 90% 10%; */
 }
 
 .createPage {
@@ -99,7 +103,7 @@ body {
 }
 
 .button {
-  border-radius: 38.5%;
+  border-radius: 25px;
   background-color: white;
 }
 
@@ -122,31 +126,13 @@ body {
 }
 
 @media only screen and (min-width: 600px) {
-  /* .navbar {
-    display: grid;
-    grid-template-columns: 75% 25%;
-    grid-template-rows: 1fr 1fr 1fr;
-    max-height: 100px;
-    border-style: solid;
-    border-radius: 38.5;
-    background-color: rgb(47, 255, 158);
-  } */
-
   .navTitle {
     font-size: 40px;
-    /* grid-row-start: 2; */
-  }
-
-  .navLinks {
-    /* grid-column-start: 2;
-    grid-row-start: 2;
-    font-size: 15px; */
-    /* background-color: rgb(215, 174, 40); */
   }
 
   .jokes {
     border-style: solid;
-    border-radius: 38.5;
+    border-radius: 25px;
     margin: 5px;
     background-color: rgb(182, 129, 182);
     display: grid;
