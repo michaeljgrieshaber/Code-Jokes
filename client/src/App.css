@@ -85,8 +85,8 @@ body {
   border-style: solid;
   border-radius: 25px;
   margin: 5px;
-  display: grid;
   background-color: red;
+  display: grid;
 }
 
 .createPage {
@@ -154,6 +154,16 @@ body {
     grid-template-columns: 75% 25%;
     grid-template-rows: 1fr;
   }
+
+  .badJoke {
+    border-style: solid;
+    border-radius: 25px;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 1fr;
+  }
+
   .jokesAndAuthor {
     grid-column-start: 1;
     grid-row-start: 2;
