@@ -91,6 +91,7 @@ body {
 .form {
   background-color: rgb(182, 129, 182);
   border-style: solid;
+  border-radius: 25px;
 }
 
 .jokeInput {
@@ -122,6 +123,8 @@ body {
 .rules {
   background-color: rgb(182, 129, 182);
   border-style: solid;
+  border-radius: 25px;
+
   font-size: 22px;
 }
 
