@@ -2,11 +2,11 @@
 
 ## Project Name
 
-Code Jokes (working title)
+Code Jokes
 
 ## Project Description
 
-This site allows users to up vote and down vote submissions from other users.
+This site allows users to up vote and down vote submissions from other users. It also allows users to submit thier own content for voting.
 
 ## Wireframes
 
@@ -83,8 +83,21 @@ https://whimsical.com/p2-QpcFUjY65VYvSjYYcCdJQ8
 
 ### Strengths:
 
+- Stuck to the initial plan
+- Kept the design simiple/straight forward
+
 ### Weaknesses:
+
+- I felt I could have done a deeper scope
+- I did just above the minimum requirements
+- Complacency
 
 ### Opportunities:
 
+- Using a styling framework as opposed to pure CSS
+- Getting user suggestions for imporved experience
+
 ### Threats:
+
+- Not taking into account user suggestions
+- Other sites that acomplish the similar content but offer more variety
