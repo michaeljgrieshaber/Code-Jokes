@@ -17,6 +17,9 @@ export default function Rules() {
         <br />
         <br />
         •Warning: these jokes are not monitored. Read at your own risk.
+        <br />
+        <br />
+        •Bad jokes turn red and are subject to removal!
       </div>
     </div>
   );
