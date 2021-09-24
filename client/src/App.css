@@ -92,6 +92,7 @@ body {
   background-color: rgb(182, 129, 182);
   border-style: solid;
   border-radius: 25px;
+  margin: 5px;
 }
 
 .jokeInput {
@@ -106,6 +107,7 @@ body {
 .button {
   border-radius: 25px;
   background-color: white;
+  margin: 5px;
 }
 
 .buttonPlus {
@@ -124,6 +126,8 @@ body {
   background-color: rgb(182, 129, 182);
   border-style: solid;
   border-radius: 25px;
+
+  margin: 5px;
 
   font-size: 22px;
 }
