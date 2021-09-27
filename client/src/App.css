@@ -124,6 +124,7 @@ body {
 .buttonPlus {
   color: green;
   width: 10%;
+  border-style: solid;
 }
 
 .buttonMinus {

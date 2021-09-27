@@ -23,19 +23,16 @@ https://whimsical.com/p2-QpcFUjY65VYvSjYYcCdJQ8
 
 ```json
 {
-  "records": [
-    {
-      "id": "recs6KthUotQZMxRo",
-      "fields": {
-        "91": 91,
-        "joke": "This is a joke. Upvote if you like it!",
-        "author": "Charlie Chaplin"
-      },
-      "createdTime": "2021-09-16T18:29:46.000Z"
-    }
-  ],
-  "offset": "recs6KthUotQZMxRo"
-}
+    "records": [
+        {
+            "id": "recwzrbDzkJCkt9kA",
+            "fields": {
+                "author": "Jeff B.",
+                "votes": 13,
+                "joke": "Did you hear about the monkeys who shared an Amazon account? They were Prime mates."
+            },
+            "createdTime": "2021-09-20T22:08:08.000Z"
+        },
 ```
 
 ### MVP/PostMVP
