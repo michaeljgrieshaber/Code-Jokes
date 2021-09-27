@@ -44,7 +44,7 @@ body {
   padding: 2px;
   border-style: solid;
   border-radius: 25px;
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .linkCreate {
@@ -56,8 +56,7 @@ body {
   padding: 2px;
   border-style: solid;
   border-radius: 25px;
-
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .linkRules {
@@ -69,8 +68,7 @@ body {
   padding: 2px;
   border-style: solid;
   border-radius: 25px;
-
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .home {
@@ -141,13 +139,11 @@ body {
   background-color: rgb(182, 129, 182);
   border-style: solid;
   border-radius: 25px;
-
   margin: 5px;
-
   font-size: 22px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
   .navTitle {
     font-size: 40px;
   }
@@ -177,13 +173,6 @@ body {
 
   .votesAndButtons {
     grid-column-start: 2;
-
     grid-row-start: 2;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .navTitle {
-    font-size: 30px;
   }
 }
