@@ -1,7 +1,7 @@
 export default function Form(props) {
   return (
     <form onSubmit={props.handleSubmit} className="form">
-      <label></label>
+      <br />
       <textarea
         placeholder="Type Joke Here"
         className="jokeInput"
@@ -11,9 +11,8 @@ export default function Form(props) {
       />
       <br />
 
-      <label></label>
       <input
-        placeholder="Author Name Here"
+        placeholder="Type Author Name Here"
         className="authorInput"
         type="text"
         value={props.author}
