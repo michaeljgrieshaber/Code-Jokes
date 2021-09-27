@@ -7,13 +7,13 @@ export default function Navbar() {
       <br />
       <div className="navLinks">
         <Link to="/" className="linkHome">
-          Home
+          Jokes Home
         </Link>
         <Link to="/Create" className="linkCreate">
           Add jokes
         </Link>
         <Link to="/Rules" className="linkRules">
-          Rules
+          Joke Rules
         </Link>
       </div>
     </div>
