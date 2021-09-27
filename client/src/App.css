@@ -125,10 +125,12 @@ body {
 
 .buttonPlus {
   color: green;
+  width: 10%;
 }
 
 .buttonMinus {
   color: red;
+  width: 10%;
 }
 
 .rulesMain {
