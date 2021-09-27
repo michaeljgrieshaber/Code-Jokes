@@ -20,6 +20,9 @@ export default function Rules() {
         <br />
         <br />
         •Bad jokes turn red and are subject to removal!
+        <br />
+        <br />
+        •Vote as often as you please.
       </div>
     </div>
   );
