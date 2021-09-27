@@ -47,7 +47,7 @@ https://whimsical.com/p2-QpcFUjY65VYvSjYYcCdJQ8
 #### PostMVP
 
 - Modify the user submission to have multiple options like a would you rather and include the user to pick options
-- Create seperate forums for different topics. Example: jokes, favorite team, would you rather,
+- Create seperate forums for different topics. Example: jokes, favorite team, would you rather, etc.
 
 ## Project Schedule
 
