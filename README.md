@@ -11,8 +11,7 @@ This site allows users to up vote and down vote submissions from other users. It
 ## Wireframes
 
 https://whimsical.com/p2-QpcFUjY65VYvSjYYcCdJQ8
-
-![](wireframe.png)
+![](Wireframe.png)
 
 ## Component Hierarchy
 
