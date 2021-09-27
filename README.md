@@ -2,7 +2,7 @@
 
 ## Project Name
 
-Code Jokes
+Vote a Joke
 
 ## Project Description
 
@@ -12,9 +12,13 @@ This site allows users to up vote and down vote submissions from other users. It
 
 https://whimsical.com/p2-QpcFUjY65VYvSjYYcCdJQ8
 
+![](wireframe.png)
+
 ## Component Hierarchy
 
 https://whimsical.com/p2-QpcFUjY65VYvSjYYcCdJQ8
+
+![](ComponentHierarchy.png)
 
 ## API and Data Sample
 
@@ -51,17 +55,17 @@ https://whimsical.com/p2-QpcFUjY65VYvSjYYcCdJQ8
 
 ## Project Schedule
 
-| Day      | Deliverable                       | Status     |
-| -------- | --------------------------------- | ---------- |
-| 9/16/21  | Get project idea approved         | Incomplete |
-| 9/17/21  | Get component hierachery approved | Incomplete |
-| 9/18/21  | Set up README & project templates | Incomplete |
-| 9/19/21  | Psuedo code                       | Incomplete |
-| 9/20/21  | Code                              | Incomplete |
-| 9/21/21  | Code                              | Incomplete |
-| 9/22/21  | Code/CSS                          | Incomplete |
-| 9/23/21  | CSS                               | Incomplete |
-| 9/24/21+ | Presentations                     | Incomplete |
+| Day      | Deliverable                       | Status   |
+| -------- | --------------------------------- | -------- |
+| 9/16/21  | Get project idea approved         | complete |
+| 9/17/21  | Get component hierachery approved | complete |
+| 9/18/21  | Set up README & project templates | complete |
+| 9/19/21  | Psuedo code                       | complete |
+| 9/20/21  | Code                              | complete |
+| 9/21/21  | Code                              | complete |
+| 9/22/21  | Code/CSS                          | complete |
+| 9/23/21  | CSS                               | complete |
+| 9/24/21+ | Presentations                     | complete |
 
 ## Timeframes
 
