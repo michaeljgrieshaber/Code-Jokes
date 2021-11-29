@@ -63,6 +63,11 @@ export default function Home() {
     setToggle((toggle) => !toggle);
   };
 
+  if (jokes.length === 0) {
+  return <div>Loading Jokes</div>
+}
+
+
   return (
     <div className="home">
       <Navbar />
